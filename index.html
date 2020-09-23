@@ -9,28 +9,39 @@
 
     <link rel="icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./dist/css/main.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-
-
-
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
-
 
 </head>
 
 <body>
-   
-    
-    
+   <div class="quote-cointainer" id="quote-container">
+       <!-- Quotes -->
+       <div class="quote-text">
+           <i class="fas fa-quote-left"></i>
+           <span id="quote">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus quo facilis!   </span>
+       </div>
+       <!-- Author -->
+       <div class="quote-author">
+           &mdash;<span id="author"> Buddha </span>
+       </div>
+       <!-- buttons -->
+       <div class="button-container">
+           <button class="twitter-button" id="twitter" title="Tweet it!">
+            <i class="fab fa-twitter"></i>
+           </button>
+           <button id="new-quote">New Quotes</button>
+       </div>
+   </div>
+    <!-- loader -->
+   <div class="loader" id="loader">
+       
+   </div>
+
 
     <!-- Script -->
     <script src="script.js"></script>
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.min.js">
-    <link rel="stylesheet" href="./node_modules/popper.js/dist/popper.min.js">
-    <link rel="stylesheet" href="./node_modules/jquery/dist/jquery.slim.min.js">
 </body>
 
 </html>
