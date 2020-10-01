@@ -73,8 +73,11 @@ body {
             box-shadow: 0 0.1rem rgba($color: #eeeeee, $alpha: 0.2);
         }
         a {
+            padding: 0;
+            margin: 0;
             text-decoration: none;
             color: green;
+            font-size: 1.5rem;
         }
     }
 }

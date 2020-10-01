@@ -7,13 +7,13 @@ const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
 // Loading Spinner Shown
-function loading() {
+function showLoadingSpinner() {
   loader.hidden = false;
   quoteContainer.hidden = true;
 }
 
 // Remove Loading Spinner
-function complete() {
+function removeLoadingSpinner() {
   if (!loader.hidden) {
     quoteContainer.hidden = false;
     loader.hidden = true;
@@ -22,7 +22,7 @@ function complete() {
 
 // Get Quote From API
 async function getQuote() {
-  loading();
+  showLoadingSpinner();
   // We need to use a Proxy URL to make our API call in order to avoid a CORS error
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   const apiUrl = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
@@ -43,7 +43,7 @@ async function getQuote() {
     }
     quoteText.innerText = data.quoteText;
     // Stop Loading, Show Quote
-    complete();
+    removeLoadingSpinner();
   } catch (error) {
     getQuote();
   }

@@ -81,8 +81,11 @@ body {
 }
 
 .button-container button a {
+  padding: 0;
+  margin: 0;
   text-decoration: none;
   color: green;
+  font-size: 1.5rem;
 }
 
 .loader {
